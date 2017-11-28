@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Mis Finanzas by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>Mis Finanzas</title>
@@ -24,7 +20,7 @@
 						<!-- Logo -->
 							<div id="logo">
 								<h1><a href="index.html">Mis Finanzas</a></h1>
-								<p>A free responsive site template by HTML5 UP</p>
+								
 							</div>
 
 						<!-- Nav -->
@@ -61,25 +57,21 @@
 
 			<!-- Intro -->
 				<div id="intro-wrapper" class="wrapper style1">
-					<div class="title">The Introduction</div>
+					<div class="title"> Introducción </div>
 					<section id="intro" class="container">
-						<p class="style1">So in case you were wondering what this is all about ...</p>
-						<p class="style2">
-							Mis Finanzas is a free responsive<br class="mobile-hide" />
-							site template by <a href="http://html5up.net" class="nobr">HTML5 UP</a>
+						<p class="style1"> ¿Quiénes somos?</p>
+						<p class="style1">
+							Somos un grupo de contadores especializados con las herramientas para brindarte la solucion a tus problemas financieros. <br class="mobile-hide" />
+							Nuestra especialidad es otorgar de forma eficaz y rápida la ayuda que necesites para que lleves tus finanzas a su máximo potencial                                  <a href="http://html5up.net" class="nobr"></a>
 						</p>
-						<p class="style3">It's <strong>responsive</strong>, built on <strong>HTML5</strong> and <strong>CSS3</strong>, and released for
-						free under the <a href="http://html5up.net/license">Creative Commons Attribution 3.0 license</a>, so use it for any of
-						your personal or commercial projects &ndash; just be sure to credit us!</p>
-						<ul class="actions">
-							<li><a href="#" class="button style3 big">Proceed</a></li>
-						</ul>
+						<p class="style3"><strong>Mis Finanzas Accounting Group , Always by your side.</strong></p>
+						
 					</section>
 				</div>
 
 			<!-- Main -->
 				<div class="wrapper style2">
-					<div class="title">The Details</div>
+					<div class="title"> Nuestros beneficios </div>
 					<div id="main" class="container">
 
 						<!-- Image -->
@@ -90,56 +82,43 @@
 						<!-- Features -->
 							<section id="features">
 								<header class="style1">
-									<h2>Dolor consequat feugiat amet veroeros</h2>
-									<p>Feugiat dolor nullam orci pretium phasellus justo</p>
+									<h2> ¿Qué beneficios adquiero al ser parte de Mis Finanzas ? </h2>
+									
 								</header>
 								<div class="feature-list">
 									<div class="row">
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-comment">Mattis velit diam vulputate</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-comment">ACCESIBILIDAD </h3>
+												<p>Disponibilidad del servicio las 24 horas </p>
 											</section>
 										</div>
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-refresh">Lorem ipsum dolor sit veroeros</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-refresh">ASISTENCIA</h3>
+												<p>Contacto con personas dedicadas al rubro</p>
 											</section>
 										</div>
 									</div>
 									<div class="row">
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-picture-o">Pretium phasellus justo lorem</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-wrench" >ATENCIÓN </h3>
+												<p>Soporte técnico por expertos</p>
 											</section>
 										</div>
 										<div class="6u 12u(mobile)">
 											<section>
-												<h3 class="icon fa-cog">Tempus sed pretium orci</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
+												<h3 class="icon fa-cog"> NOTICIAS FINANCIERAS </h3>
+												<p> Disponibilidad de distintos artículos financieros de las mejores fuentes del mundo</p>
 											</section>
 										</div>
 									</div>
-									<div class="row">
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-wrench">Aliquam consequat et feugiat</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-										<div class="6u 12u(mobile)">
-											<section>
-												<h3 class="icon fa-check">Dolore laoreet aliquam mattis</h3>
-												<p>Eget mattis at, laoreet vel et velit aliquam diam ante, aliquet sit amet vulputate. Eget mattis at, laoreet vel velit lorem.</p>
-											</section>
-										</div>
-									</div>
-								</div>
+									
+									
 								<ul class="actions actions-centered">
-									<li><a href="#" class="button style1 big">Get Started</a></li>
-									<li><a href="#" class="button style2 big">More Info</a></li>
+									<li><a href="#" class="button style1 big"> Empieza ahora </a></li>
+									<li><a href="#" class="button style2 big"> Ya tengo mi cuenta </a></li>
 								</ul>
 							</section>
 
@@ -148,36 +127,36 @@
 
 			<!-- Highlights -->
 				<div class="wrapper style3">
-					<div class="title">The Endorsements</div>
+					<div class="title"> Sección de noticias </div>
 					<div id="highlights" class="container">
 						<div class="row 150%">
 							<div class="4u 12u(mobile)">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-									<h3><a href="#">Aliquam diam consequat</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<a href="#" class="image featured"><img src="{{asset ('images/financial-times-logo.jpg')}}" width="150px" height='250px'  alt="" ></a>
+									<h3> Financial Times </h3>
+									<p> Lee más sobre...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+										<li><a href="/news" class="button style1">Leer</a></li>
 									</ul>
 								</section>
 							</div>
 							<div class="4u 12u(mobile)">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<a href="#" class="image featured"><img src="{{asset ('images/New_York_Times_logo.jpg')}}" width="150px" height='250px'  alt="" /></a>
+									<h3> New York Times </h3>
+									<p> Lee más sobre...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+										<li><a href="/news" class="button style1">Leer</a></li>
 									</ul>
 								</section>
 							</div>
 							<div class="4u 12u(mobile)">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<h3><a href="#">Mattis tempus lorem</a></h3>
-									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<a href="#" class="image featured"><img src="{{asset ('images/wall-s.png')}}" width="150px" height='250px'  alt= ></a>
+									<h3> The Wall Street Journal  </h3>
+									<p> Lee más sobre...</p>
 									<ul class="actions">
-										<li><a href="#" class="button style1">Learn More</a></li>
+										<li><a href="/news" class="button style1">Leer</a></li>
 									</ul>
 								</section>
 							</div>
@@ -187,13 +166,12 @@
 
 			<!-- Footer -->
 				<div id="footer-wrapper" class="wrapper">
-					<div class="title">The Rest Of It</div>
+					<div class="title"> ¿Quieres contactarte con nosotros? </div>
 					<div id="footer" class="container">
 						<header class="style1">
-							<h2>Ipsum sapien elementum portitor?</h2>
+							<h2>¿Sugerencias?</h2>
 							<p>
-								Sed turpis tortor, tincidunt sed ornare in metus porttitor mollis nunc in aliquet.<br />
-								Nam pharetra laoreet imperdiet volutpat etiam consequat feugiat.
+								Puedes enviarnos sugerencias o tu opinión sobre Mis Finanzas a cualquiera de estos puntos de contacto:
 							</p>
 						</header>
 						<hr />
@@ -237,9 +215,9 @@
 												<section>
 													<h3 class="icon fa-home">Mailing Address</h3>
 													<p>
-														Untitled Corporation<br />
-														1234 Somewhere Rd #987<br />
-														Nashville, TN 00000-0000
+														Mis Finanzas Accounting Group <br />
+														 Lima 111 <br />
+														 Buenos Aires, Argentina
 													</p>
 												</section>
 											</div>
@@ -247,9 +225,9 @@
 												<section>
 													<h3 class="icon fa-comment">Social</h3>
 													<p>
-														<a href="#">@untitled-corp</a><br />
-														<a href="#">linkedin.com/untitled</a><br />
-														<a href="#">facebook.com/untitled</a>
+														<a href="#">@MisFinanzasAccountingGroup</a><br />
+														<a href="#">linkedin.com/MisFinanzasAccountingGroup</a><br />
+														<a href="#">facebook.com/MisFinanzasAccountingGroup</a>
 													</p>
 												</section>
 											</div>
@@ -259,7 +237,7 @@
 												<section>
 													<h3 class="icon fa-envelope">Email</h3>
 													<p>
-														<a href="#">info@untitled.tld</a>
+														<a href="#">misfinanzasdh@gmail.com</a>
 													</p>
 												</section>
 											</div>

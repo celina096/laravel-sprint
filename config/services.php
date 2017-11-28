@@ -35,4 +35,21 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'google' => [
+    'client_id' => 'your-github-app-id',
+    'client_secret' => 'your-github-app-secret',
+    'redirect' => 'http://your-callback-url',
+],
+
+    'mailgun' => [
+    'domain' => 'your-mailgun-domain',
+    'secret' => 'your-mailgun-key',
+],
+    'ses' => [
+    'key' => 'your-ses-key',
+    'secret' => 'your-ses-secret',
+    'region' => 'ses-region',  // e.g. us-east-1
+],
 ];
+
+

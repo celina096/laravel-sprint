@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-
+    'Socialize' => 'Laravel\Socialite\Facades\Socialite',
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
