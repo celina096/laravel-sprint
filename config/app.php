@@ -12,7 +12,6 @@ return [
     | any other location as required by the application or its packages.
     |
     */
-    'Socialize' => 'Laravel\Socialite\Facades\Socialite',
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
@@ -177,6 +176,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
 
     ],
 
@@ -227,6 +227,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Socialize' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

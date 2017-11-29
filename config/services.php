@@ -50,6 +50,12 @@ return [
     'secret' => 'your-ses-secret',
     'region' => 'ses-region',  // e.g. us-east-1
 ],
+    'google' => [
+    'client_id'     => '852474165816-f7k1bbs0beap66dokolivmjett9ffln6.apps.googleusercontent.com',
+    'client_secret' => '2spyLMUZSuSVM8FPYKB43vj6',
+    'redirect'      => 'http://localhost:8000/login/google/callback'
+],
+
 ];
 
 
