@@ -20,7 +20,7 @@
 						<!-- Logo -->
 							<div id="logo">
 								<h1><a href="index.html">Mis Finanzas</a></h1>
-								
+
 							</div>
 
 						<!-- Nav -->
@@ -28,25 +28,24 @@
 								<ul>
 									<li class="current"><a href="/">Home</a></li>
 									<li>
-										<a href="#">Dropdown</a>
+										<a href="#"> Servicios </a>
 										<ul>
-											<li><a href="#">Lorem ipsum</a></li>
-											<li><a href="#">Magna veroeros</a></li>
-											<li><a href="#">Etiam nisl</a></li>
+											<li><a href="#">Admistración</a></li>
+											<li><a href="#">Asesoramiento</a></li>
+											<li><a href="#">Presupuestos</a></li>
 											<li>
-												<a href="#">Sed consequat</a>
+												<a href="#">Bancos</a>
 												<ul>
-													<li><a href="#">Lorem dolor</a></li>
-													<li><a href="#">Amet consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam nisl</a></li>
-													<li><a href="#">Sed feugiat</a></li>
+													<li><a href="#"> BBVA Francés </a></li>
+													<li><a href="#"> Santarder Rio </a></li>
+													<li><a href="#"> ICBC </a></li>
+													<li><a href="#"> Citi Bank </a></li>
+													<li><a href="#"> Banco Nación </a></li>
 												</ul>
 											</li>
-											<li><a href="#">Nisl tempus</a></li>
 										</ul>
 									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
+									<li><a href="left-sidebar.html"> FAQS </a></li>
 									<li><a href="/login">Login</a></li>
 									<li><a href="/register">Register</a></li>
 								</ul>
@@ -65,7 +64,7 @@
 							Nuestra especialidad es otorgar de forma eficaz y rápida la ayuda que necesites para que lleves tus finanzas a su máximo potencial                                  <a href="http://html5up.net" class="nobr"></a>
 						</p>
 						<p class="style3"><strong>Mis Finanzas Accounting Group , Always by your side.</strong></p>
-						
+
 					</section>
 				</div>
 
@@ -76,14 +75,14 @@
 
 						<!-- Image -->
 							<a href="#" class="image featured">
-								<img src="{{asset ('images/pic01.jpg')}}" alt="" />
+								<img src="{{asset ('images/background_5.jpg')}}" alt="" />
 							</a>
 
 						<!-- Features -->
 							<section id="features">
 								<header class="style1">
 									<h2> ¿Qué beneficios adquiero al ser parte de Mis Finanzas ? </h2>
-									
+
 								</header>
 								<div class="feature-list">
 									<div class="row">
@@ -114,11 +113,11 @@
 											</section>
 										</div>
 									</div>
-									
-									
+
+
 								<ul class="actions actions-centered">
-									<li><a href="#" class="button style1 big"> Empieza ahora </a></li>
-									<li><a href="#" class="button style2 big"> Ya tengo mi cuenta </a></li>
+									<li><a href="/register" class="button style1 big"> Empieza ahora </a></li>
+									<li><a href="/login" class="button style2 big"> Ya tengo mi cuenta </a></li>
 								</ul>
 							</section>
 
@@ -225,9 +224,9 @@
 												<section>
 													<h3 class="icon fa-comment">Social</h3>
 													<p>
-														<a href="#">@MisFinanzasAccountingGroup</a><br />
-														<a href="#">linkedin.com/MisFinanzasAccountingGroup</a><br />
-														<a href="#">facebook.com/MisFinanzasAccountingGroup</a>
+														<a href="#">@MisFinanzas</a><br />
+														<a href="#">linkedin.com/MisFinanzas</a><br />
+														<a href="#">facebook.com/MisFinanzas</a>
 													</p>
 												</section>
 											</div>
