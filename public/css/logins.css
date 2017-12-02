@@ -1,0 +1,11 @@
+.navbar {
+    background-color: gainsboro;
+    color: black;
+}
+
+body {
+    background-color: rgb(33, 35, 70);
+    font-family: Roboto;
+    font-size: 1.5em;
+}
+

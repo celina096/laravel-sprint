@@ -1,0 +1,11 @@
+body {
+    background-image: url('../images/background_3.jpg');
+    background-repeat: none;
+    background-size: cover;
+    color: black !important;
+    font-family: 'Oswald' !important;
+}
+
+.container {
+    background-color: rgba(100, 123, 150, 0.42) !important;
+}

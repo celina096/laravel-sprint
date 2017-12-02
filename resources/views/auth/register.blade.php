@@ -75,11 +75,11 @@ Registro
 
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                            <a href="/login/google" class="btn btn-lg waves-effect waves-light btn-block" style="background-color:red;">Google+</a>
+                            <a href="/login/google" class="btn btn-lg waves-effect waves-light btn-block" style="background-color:#c11010; color:white;">Google+</a>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                            <a href="/login/facebook" class="btn btn-lg waves-effect waves-light btn-block" style="background-color:blue;">Facebook</a>
+                            <a href="/login/facebook" class="btn btn-lg waves-effect waves-light btn-block" style="background-color:#5c549c; color:white;">Facebook</a>
                     </div>
                     </div>
                 </div>

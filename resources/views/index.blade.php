@@ -45,7 +45,7 @@
 											</li>
 										</ul>
 									</li>
-									<li><a href="left-sidebar.html"> FAQS </a></li>
+									<li><a href="/preguntas"> FAQS </a></li>
 									<li><a href="/login">Login</a></li>
 									<li><a href="/register">Register</a></li>
 								</ul>
