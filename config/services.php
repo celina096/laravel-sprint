@@ -14,10 +14,7 @@ return [
     |
     */
 
-    'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
-    ],
+    'driver' => env('MAIL_DRIVER', 'smtp'),
 
     'ses' => [
         'key' => env('SES_KEY'),
@@ -41,10 +38,6 @@ return [
     'redirect' => 'http://your-callback-url',
 ],
 
-    'mailgun' => [
-    'domain' => 'your-mailgun-domain',
-    'secret' => 'your-mailgun-key',
-],
     'ses' => [
     'key' => 'your-ses-key',
     'secret' => 'your-ses-secret',

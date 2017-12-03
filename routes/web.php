@@ -10,12 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/', function (\Illuminate\Http\Request $request, \Illuminate\Mail\Mailer $mailer){
-    $mailer
-    ->to($request->input('mail'))
-    ->send(new \App\Mail\MyMail($request->input('contact-message')));
-    return redirect()->back();
-}) -> name('sendmail'); 
+Route::post('/', 'EmailController@sendMail');
 
 Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');

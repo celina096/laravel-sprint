@@ -179,7 +179,9 @@
 
 								<!-- Contact Form -->
 									<section>
-										<form method="post" action="#">
+										<form method="post">
+										<input type="hidden" value="" >
+										{{ csrf_field() }}
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
 													<input type="text" name="name" id="contact-name" placeholder="Name" />
@@ -190,7 +192,7 @@
 											</div>
 											<div class="row 50%">
 												<div class="12u">
-													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<textarea name="mensaje" id="contact-message" placeholder="Message" rows="4"></textarea>
 												</div>
 											</div>
 											<div class="row">
