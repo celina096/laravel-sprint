@@ -6,13 +6,19 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+	"components/jquery": "^3.2",
         "aws/aws-sdk-php": "~3.0",
         "fideloper/proxy": "~3.3",
         "guzzlehttp/guzzle": "^6.3",
         "intervention/image": "^2.4",
         "laravel/framework": "5.5.*",
         "laravel/socialite": "^3.0",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "fzaninotto/faker": "^1.7",
+        "laraveles/spanish": "^1.0",
+        "nesbot/carbon": "^1.22",
+        "styde/html": "^1.4",
+        "yajra/laravel-datatables-oracle": "~8.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
