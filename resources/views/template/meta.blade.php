@@ -89,7 +89,7 @@
           <ul class="sidebar-menu">
             <li class="header"></li>
             <li>
-              <a href="#">
+              <a href="/profile">
                 <i class="fa fa-tasks"></i> <span>Escritorio</span>
               </a>
             </li>
