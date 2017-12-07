@@ -32,7 +32,7 @@ Route::get('/vistas/egresos/tipo/select_tipo/{id}/{periodo}', 'Vistas\Egresos\Ti
 
 Auth::routes();
 
-Route::get('/home', 'UserController@profile');
+Route::get('/home', 'UserController@profile')->name('home');
 
 Route::post('/', 'EmailController@sendMail');
 

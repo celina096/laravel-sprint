@@ -4,8 +4,25 @@
 }
 
 body {
-    background-color: rgb(33, 35, 70);
+    background-image: url('../images/blurred-background-5 (1).jpg') !important;
+    background-repeat: none;
+    background-size: cover;
     font-family: Roboto;
     font-size: 1.5em;
 }
 
+.panel {
+    background-color: transparent !important;
+    border-radius: 25px;
+    border: 1px black !important;
+}
+
+.panel-default {
+    background-color: rgba(6, 17, 25, 0.1) !important;
+}
+
+.panel-heading {
+    margin-top: 20px;
+    background-color: rgba(6, 17, 25, 0.1) !important;
+    border-radius: 25px;
+}

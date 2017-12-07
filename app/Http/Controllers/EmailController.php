@@ -11,8 +11,8 @@ class EmailController extends Controller
 {
     function sendMail(Request $request) {
         $this->validate($request, [
-            'email' => 'required|email|max:100',
-            'mensaje' => 'required|min:5',
+            'email' => 'required',
+            'mensaje' => 'required',
             'name' => 'max:100'
             ]);
 
