@@ -41,7 +41,7 @@
 
  
  <article class="text">
-   <h1> Preguntas Frecuentes </h1>
+  
 
      <h2>¿Cómo puedo obtener mi clave de acceso ?</h2>
     <h3>Para registrarte ten en cuenta los siguientes pasos:</h3>
@@ -61,12 +61,12 @@
   </li>
 </ul>
 
-  <h2> ¿ Mis datos están seguros? </h2>
+  <h2>¿Mis datos están seguros? </h2>
   <ul>
     <li> En Mis Finanzas Accounting Group contamos con los más altos estándares de seguridad para que tu información solo quede en nuestras manos.</li>
   </ul>
 
-  <h2> ¿Qué soporte voy a recibir? </h2>
+  <h2>¿Qué soporte voy a recibir? </h2>
   <ul>
     <li> Contamos con atención y soporte al cliente las 24hs , solo debes enviarnos un mail detallando la ayuda que estes requiriendo e inmediatamente obtendrás respuesta.</li>
   </ul>
