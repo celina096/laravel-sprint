@@ -10,6 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+
+
 Route::resource('/configuracion/gasto', 'GastosController')->middleware('auth');
 Route::get('/configuracion/gasto-listar', 'GastosController@listar')->middleware('auth');
 Route::resource('/configuracion/tipos_de_gastos', 'Tipo_de_gastoController')->middleware('auth');
@@ -32,7 +37,7 @@ Route::get('/vistas/egresos/tipo/select_tipo/{id}/{periodo}', 'Vistas\Egresos\Ti
 
 Auth::routes();
 
-Route::get('/home', 'UserController@profile')->name('home');
+Route::get('/home', 'UserController@profile');
 
 Route::post('/', 'EmailController@sendMail');
 

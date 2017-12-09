@@ -48,35 +48,36 @@
           </a>
           <!-- Navbar Right Menu -->
           <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav navbar-right">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                            <li><a href="{{ route('register') }}">Register</a></li>
-                        @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
 
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
-                                        </a>
-                                        
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="/plugins/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">EQUIPO DE FINANZAS</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="/plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      www.finanzas.com - Desarrollando Software
+                      <small>www.finanzas.com</small>
+                    </p>
+                  </li>
 
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                            {{ csrf_field() }}
-                                        </form>
-                                    </li>
-                                    <li><a href="/profile"><i class="fa fa-btn fa-user"></i>Profile</a></li>
-                                </ul>
-                            </li>
-                        @endguest
-                    </ul>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Cerrar</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
           </div>
 
         </nav>
@@ -89,7 +90,7 @@
           <ul class="sidebar-menu">
             <li class="header"></li>
             <li>
-              <a href="/profile">
+              <a href="#">
                 <i class="fa fa-tasks"></i> <span>Escritorio</span>
               </a>
             </li>
