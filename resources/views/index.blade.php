@@ -37,7 +37,7 @@
 												<a href="#">Bancos</a>
 												<ul>
 													<li><a href="#"> BBVA Francés </a></li>
-													<li><a href="#"> Santarder Rio </a></li>
+													<li><a href="#"> Santander Rio </a></li>
 													<li><a href="#"> ICBC </a></li>
 													<li><a href="#"> Citi Bank </a></li>
 													<li><a href="#"> Banco Nación </a></li>
@@ -259,7 +259,7 @@
 					</div>
 					<div id="copyright">
 						<ul>
-							<li>&copy Made by: Mariana, Hernán & Celina - Digital House</li>
+							<li>&copy Made by: Celina, Hernán & Mariana  - Digital House</li>
 						</ul>
 					</div>
 				</div>

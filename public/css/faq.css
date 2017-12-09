@@ -4,8 +4,17 @@ body {
     background-size: cover;
     color: black !important;
     font-family: 'Oswald' !important;
+    font-size: 1.5em;
+    
 }
 
 .container {
-    background-color: rgba(100, 123, 150, 0.42) !important;
+    background-color: rgba(225, 234, 243, 0.42) !important;
+    width: 100% !important;
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center !important;
+    font-stretch: expanded;
 }

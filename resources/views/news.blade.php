@@ -33,7 +33,7 @@
 
             {{ csrf_field() }}
 <section id="content" class="section-dropdown">
-<p class="select-header"> Select a news source: </p>
+<p class="select-header">Seleccione un diario : </p>
 <label class="select"> 
     <select name="news_sources" id="news_sources">
     <option value="{{@$source_id}} : {{@$source_name}}">{{$source_name}}</option>
@@ -44,7 +44,7 @@
 </label>
 
  </section> 
-<p> News Source : {{$source_name}}</p>
+<p> Fuente : {{$source_name}}</p>
     <section class="news">
     @foreach($news as $selected_news)
     <article>
