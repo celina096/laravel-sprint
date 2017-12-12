@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 use App\Gasto;
 use App\Tipo_de_gasto;
 use App\Http\Requests\GastosRequest;
@@ -19,20 +20,15 @@ class GastosController extends Controller
 
       // dd('estoy en listar');
 
-        $gastos = Gasto::all();
-        $tipos = Tipo_de_gasto::all();
+      $gastos =DB::table('gastos')
+          ->select('gastos.id','gastos.gasto','tipos_de_gastos.tipo')
+          ->join('tipos_de_gastos', 'gastos.tipo_de_gasto_id', '=', 'tipos_de_gastos.id')
+           ->get();
 
-        return response()->json([
-          "data"=> $gastos->toArray(),
-          "tipos"=> $tipos->toArray(),
+        // $gastos = Gasto::all();
+        // $tipos = Tipo_de_gasto::all();
 
-          ]);
-        // $gastos->toArray(),
-        //         $tipos->toArray();
-        // return response()->json(
-        //   $gastos
-          // $tipos->toArray
-        // );
+        return response()->json(["data"=> $gastos->toArray()]);
 
     }
 
@@ -42,7 +38,7 @@ class GastosController extends Controller
       $tipos = Tipo_de_gasto::all();
         return view('configuracion.gasto', ['tipos' => $tipos]);
 
-    
+
     }
 
     /**
@@ -68,7 +64,8 @@ class GastosController extends Controller
         'tipo_de_gasto_id' => $request->input('tipo')
       ]);
       $gasto->save();
-      return redirect()->route('gasto.index');
+      // return redirect()->route('gasto.index');
+      return response()->json(["data"=> $gasto->toArray()]);
     }
 
     /**
@@ -126,5 +123,20 @@ class GastosController extends Controller
       $gasto = Gasto::find($id);
       $gasto->delete();
       return redirect()->route('gasto.index');
+    }
+
+    public function crear(Request $request)
+    {
+      if ($request->ajax()){
+        $gasto = new Gasto([
+          'gasto' => $request['gasto'],
+          'tipo_de_gasto_id' => $request['tipo']
+        ]);
+        $gasto->save();
+
+        return response()->json([
+          "mensaje" => $gasto
+          ]);
+        }
     }
 }
