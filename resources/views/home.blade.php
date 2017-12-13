@@ -2,12 +2,6 @@
 @extends('template.nav')
 @section('titulo','Configuracion de Gastos')
 @section('content')
-
-  BIENVENIDO: {{ auth()->user()->name}}
-
-  <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
                 <img src="uploads/avatars/{{auth()->user()->avatar}}" alt="" width="100px">
@@ -18,7 +12,7 @@
                         </div>
                     @endif
                     <h1>Este es el perfil de {{auth()->user()->name }}</h1>
-                    <form action="/profile" method="post" enctype='multipart/form-data'</form>
+                    <form action="" method="post" enctype='multipart/form-data'</form>
                     {{csrf_field()}}
                     <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
                             <label for="avatar" class="col-md-4 control-label">Editar avatar</label>
@@ -45,12 +39,8 @@
                             <button type='submit' value="submit" name="submit">Editar</button>
                         </div>
                         </form>
-                        
                 </div>
             </div>
-        </div>
-    </div>
-</div>
 @endsection
 
 @section('script')

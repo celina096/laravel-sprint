@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::post('/home', 'UserController@updateAvatar');
 /* hernan */
 Route::get('/test', function(){
 
@@ -95,7 +95,6 @@ Route::post('/', 'EmailController@sendMail');
 
 Route::get('login/google', 'Auth\LoginController@redirectToProvider');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback');
-Route::put('/profile', 'UserController@updateAvatar');
 Route::get('/preguntas', function() {
     return view('faq');
 });
