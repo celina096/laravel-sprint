@@ -8,6 +8,7 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{asset('css/main.css')}}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="{{asset('css/carrousel.css')}}" />
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -129,37 +130,47 @@
 					<div class="title"> Sección de noticias </div>
 					<div id="highlights" class="container">
 						<div class="row 150%">
-							<div class="4u 12u(mobile)">
+					        <div class="carrousel">
+							  <div class="carrousel-images">
+
+							  <div class="4u 12u(mobile) vista-container">
+							   <div class="vista">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="{{asset ('images/financial-times-logo.jpg')}}" width="150px" height='250px'  alt="" ></a>
-									<h3> Financial Times </h3>
-									<p> Lee más sobre...</p>
+									<a href="#" class="image-link"><img src="{{asset ('images/financial-times-logo.jpg')}}"   alt="" ></a>
+									
 									<ul class="actions">
-										<li><a href="/news" class="button style1">Leer</a></li>
+										<li><a href="/news" class="button style1">Leer más</a></li>
 									</ul>
 								</section>
+								</div>
 							</div>
-							<div class="4u 12u(mobile)">
+							<div class="4u 12u(mobile) vista-container ">
+							   <div class="vista">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="{{asset ('images/New_York_Times_logo.jpg')}}" width="150px" height='250px'  alt="" /></a>
-									<h3> New York Times </h3>
-									<p> Lee más sobre...</p>
+									<a href="#" class="image-link"><img src="{{asset ('images/New_York_Times_logo.jpg')}}"   alt="" /></a>
+									
 									<ul class="actions">
-										<li><a href="/news" class="button style1">Leer</a></li>
+										<li><a href="/news" class="button style1">Leer más</a></li>
 									</ul>
 								</section>
+								</div>
 							</div>
-							<div class="4u 12u(mobile)">
+							<div class="4u 12u(mobile) vista-container ">
+							  <div class="vista">
 								<section class="highlight">
-									<a href="#" class="image featured"><img src="{{asset ('images/wall-s.png')}}" width="150px" height='250px'  alt= ></a>
-									<h3> The Wall Street Journal  </h3>
-									<p> Lee más sobre...</p>
+									<a href="#" class="image-link"><img src="{{asset ('images/wall-s.png')}}" alt= ></a>
+									
 									<ul class="actions">
-										<li><a href="/news" class="button style1">Leer</a></li>
+										<li><a href="/news" class="button style1">Leer más</a></li>
 									</ul>
 								</section>
+								</div>
 							</div>
-						</div>
+						  </div>
+							<button type="button" class="prev">&lt;</button>
+                            <button type="button" class="next">&gt;</button>
+						  </div>
+					   </div> 
 					</div>
 				</div>
 
@@ -266,6 +277,8 @@
 
 		</div>
 
+		
+
 		<!-- Scripts -->
 
 			<script src="{{asset ('js/jquery.min.js')}}"></script>
@@ -275,6 +288,38 @@
 			<script src="{{asset ('js/util.js')}}"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="{{asset ('js/main.js')}}"></script>
+			
+			<script type="text/javascript">
+    var carrousel = document.querySelector('.carrousel')
+var carrito = document.querySelector('.carrousel-images')
 
+var imagenActual = 0
+
+var cantidadImagenes = document.querySelectorAll('.carrousel .vista').length
+
+document.querySelector('button.prev').addEventListener('click', function () {
+  if (imagenActual > 0) {
+        imagenActual--
+    } else {
+        imagenActual = cantidadImagenes - 1
+    }
+    carrito.style.transform = 'translateX(' + (-carrousel.offsetWidth * imagenActual) + 'px)';
+})
+
+document.querySelector('button.next').addEventListener('click', function () {
+  if (imagenActual < (cantidadImagenes - 1)) {
+        imagenActual++
+    } else {
+        imagenActual = 0
+    }
+    carrito.style.transform = 'translateX(' + (-carrousel.offsetWidth * imagenActual) + 'px)';
+})
+
+carrito.addEventListener('transitionend', function () {
+        console.log('fin de la transition')
+    })
+
+</script>
+           
 	</body>
 </html>
