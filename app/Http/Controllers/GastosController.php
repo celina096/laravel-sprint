@@ -10,6 +10,12 @@ use App\Http\Requests\GastosRequest;
 
 class GastosController extends Controller
 {
+
+  function __construct()
+  {
+      $this->middleware('auth');
+  }
+
     /**
      * Display a listing of the resource.
      *
@@ -21,8 +27,10 @@ class GastosController extends Controller
       // dd('estoy en listar');
 
       $gastos =DB::table('gastos')
-          ->select('gastos.id','gastos.gasto','tipos_de_gastos.tipo')
+          ->select('gastos.id','gastos.gasto','tipos_de_gastos.tipo','tipos_de_gastos.id as id_tipo','users.name')
           ->join('tipos_de_gastos', 'gastos.tipo_de_gasto_id', '=', 'tipos_de_gastos.id')
+          ->join('users', 'gastos.user_id', '=', 'users.id')
+          ->where(DB::raw('users.id'),auth()->user()->id )
            ->get();
 
         // $gastos = Gasto::all();
@@ -34,11 +42,10 @@ class GastosController extends Controller
 
     public function index()
     {
-      // $gastos = Gasto::all();
+
       $tipos = Tipo_de_gasto::all();
-        return view('configuracion.gasto', ['tipos' => $tipos]);
-
-
+        return view('configuracion.egresos.gasto')
+        ->with('tipos', $tipos);
     }
 
     /**
@@ -61,7 +68,8 @@ class GastosController extends Controller
     {
       $gasto = new Gasto([
         'gasto' => $request->input('gasto'),
-        'tipo_de_gasto_id' => $request->input('tipo')
+        'tipo_de_gasto_id' => $request->input('tipo'),
+        'user_id' => auth()->user()->id,
       ]);
       $gasto->save();
       // return redirect()->route('gasto.index');
@@ -112,6 +120,19 @@ class GastosController extends Controller
         return redirect()->route('gasto.index');
     }
 
+    public function editar(Request $request, $id)
+    {
+      $gasto = Gasto::find($id);
+      $gasto->gasto =  $request['gasto'];
+      $gasto->tipo_de_gasto_id = $request['tipo'];
+
+      $gasto->save();
+
+      return response()->json([
+        "mensaje" => $gasto
+        ]);
+    }
+
     /**
      * Remove the specified resource from storage.
      *
@@ -125,12 +146,20 @@ class GastosController extends Controller
       return redirect()->route('gasto.index');
     }
 
+    public function eliminar($id)
+    {
+      $gasto = Gasto::find($id);
+      $gasto->delete();
+      return response()->json(["mensaje" => $gasto]);
+    }
+
     public function crear(Request $request)
     {
       if ($request->ajax()){
         $gasto = new Gasto([
           'gasto' => $request['gasto'],
-          'tipo_de_gasto_id' => $request['tipo']
+          'tipo_de_gasto_id' => $request['tipo'],
+          'user_id' => auth()->user()->id,
         ]);
         $gasto->save();
 

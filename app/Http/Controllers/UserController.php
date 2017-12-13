@@ -47,7 +47,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**
@@ -84,10 +84,21 @@ class UserController extends Controller
         //
     }
 
+    
+
     public function updateAvatar(Request $request) {
+        if ($request->hasfile('nombre')) {
+            $user->name = $request->nombre;
+        }
+        if ($request->hasfile('email')) {
+            $request->validate([
+                'email' => 'required|email|max:255|exists:users'
+            ]);
+        }
+
         if ($request->hasfile('avatar')){
             $avatar = $request->file('avatar');
-            $filename = Auth::user()->name . time() . "." . $avatar>getClientOriginalExtension();
+            $filename = Auth::user()->name . time() . "." . $avatar->getClientOriginalExtension();
             Image::make($avatar)->fit(300,300)
             ->save(public_path("/uploads/avatars/" . $filename ));
 
@@ -95,7 +106,7 @@ class UserController extends Controller
             $user->avatar = $filename;
             $user->save();
         }
-        return view('profile', array('user' => Auth::user()));
+        return view('welcome', array('user' => Auth::user()));
     }
 
     public function profile() {

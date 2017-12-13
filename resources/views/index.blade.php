@@ -227,8 +227,8 @@
 													<h3 class="icon fa-comment">Social</h3>
 													<p>
 														<a href="#">@MisFinanzas</a><br />
-														<a href="#">linkedin.com/MisFinanzas</a><br />
-														<a href="#">facebook.com/MisFinanzas</a>
+														<a href="#">linkedin.com</a><br />
+														<a href="#">facebook.com</a>
 													</p>
 												</section>
 											</div>

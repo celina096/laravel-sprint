@@ -1,18 +1,14 @@
 @extends('layouts.app')
-@section('title')
-Registro
-@endsection
-@section('content')
 
-        <link rel="stylesheet" href="{{asset('css/logins.css')}}" />
+@section('content')
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Registro</div>
+                <div class="panel-heading">Registrarse</div>
 
                 <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">
+                    <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
@@ -42,10 +38,20 @@ Registro
                                 @endif
                             </div>
                         </div>
-
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="rol" class="col-md-4 control-label">Rol</label>
+                            <div class="col-md-6">
+                              <select class="form-control" name="rol" required>
+                                <option value=""></option>
+                                <option value="administrador">ADMINISTRADOR</option>
+                                <option value="liquidador">LIQUIDADOR</option>
+                                <option value="asistente">ASISTENTE</option>
+                              </select>
+                            </div>
+                        </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Contraseña</label>
+                            <label for="password" class="col-md-4 control-label">Password</label>
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control" name="password" required>
@@ -59,7 +65,7 @@ Registro
                         </div>
 
                         <div class="form-group">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirmar contraseña</label>
+                            <label for="password-confirm" class="col-md-4 control-label">Confirmar Password</label>
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
@@ -74,16 +80,6 @@ Registro
                             </div>
                         </div>
                     </form>
-
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <a href="/login/google" class="btn btn-lg waves-effect waves-light btn-block" style="background-color:#c11010; color:white;">Google+</a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
-                            <a href="/login/facebook" class="btn btn-lg waves-effect waves-light btn-block" style="background-color:#5c549c; color:white;">Facebook</a>
-                    </div>
-                    </div>
                 </div>
             </div>
         </div>
