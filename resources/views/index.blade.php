@@ -46,7 +46,7 @@
 											</li>
 										</ul>
 									</li>
-									<li><a href="/preguntas"> FAQS </a></li>
+									<li><a href="/preguntas"> FAQs </a></li>
 									<li><a href="/login">Login</a></li>
 									<li><a href="/register">Register</a></li>
 								</ul>
@@ -138,9 +138,7 @@
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/financial-times-logo.jpg')}}"   alt="" ></a>
 									
-									<ul class="actions">
-										<li><a href="/news" class="button style1">Leer más</a></li>
-									</ul>
+									
 								</section>
 								</div>
 							</div>
@@ -148,10 +146,8 @@
 							   <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/New_York_Times_logo.jpg')}}"   alt="" /></a>
+								
 									
-									<ul class="actions">
-										<li><a href="/news" class="button style1">Leer más</a></li>
-									</ul>
 								</section>
 								</div>
 							</div>
@@ -160,10 +156,10 @@
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/wall-s.png')}}" alt= ></a>
 									
-									<ul class="actions">
-										<li><a href="/news" class="button style1">Leer más</a></li>
-									</ul>
+								
+								
 								</section>
+									
 								</div>
 							</div>
 						  </div>
@@ -172,6 +168,11 @@
 						  </div>
 					   </div> 
 					</div>
+					
+					<ul class="actions actions-centered">
+							<li><a href="/news" class="button style1 big">Leer más</a></li>
+							</ul>
+			
 				</div>
 
 			<!-- Footer -->
