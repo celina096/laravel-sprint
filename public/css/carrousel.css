@@ -50,10 +50,28 @@ height: 30px;
 }
 
 .carrousel button.prev {
-left: 50px;
+width: 50px;
 height: 50px;
 }
 .carrousel button.next {
-right: 50px;
+width: 50px;
 height: 50px;
+}
+
+@media (max-width: 600px) {
+  .carrousel {
+    min-height: 140px;
+   margin-bottom: 60px;
+  }
+ 
+
+
+.carrousel button.prev {
+width: 50px;
+height: 50px;
+}
+.carrousel button.next {
+width: 50px;
+height: 50px;
+}
 }
