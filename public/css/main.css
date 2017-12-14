@@ -422,7 +422,6 @@
 	}
 
 	@media screen and (min-width: 737px) {
-
 		.row > * {
 			padding: 50px 0 0 50px;
 		}
@@ -852,6 +851,9 @@
 	}
 
 	@media screen and (max-width: 736px) {
+		video {
+			display: none;
+		}
 
 		.row > * {
 			padding: 10px 0 0 10px;
@@ -1604,6 +1606,7 @@
 
 	#header-wrapper {
 		background-size: cover;
+		background-image: url('/images/backgroundss.jpg');
 	}
 
 		#header-wrapper:before {

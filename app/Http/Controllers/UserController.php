@@ -47,7 +47,7 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        
+
     }
 
     /**
@@ -84,7 +84,7 @@ class UserController extends Controller
         //
     }
 
-    
+
 
     public function updateAvatar(Request $request) {
         // if ($request->hasfile('nombre')) {
