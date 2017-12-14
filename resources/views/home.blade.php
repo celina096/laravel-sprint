@@ -4,23 +4,18 @@
 @section('content')
             <div class="panel panel-default">
                 <div class="panel-heading">Dashboard</div>
-                <img src="uploads/avatars/{{auth()->user()->avatar}}" alt="" width="100px">
                 <div class="panel-body">
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h1>Este es el perfil de {{auth()->user()->name }}</h1>
-                    <form action="" method="post" enctype='multipart/form-data'</form>
+                    <h1 class="text-center">Este es el perfil de {{auth()->user()->name }}</h1>
+                    <form class="text-center" action="" method="post" enctype='multipart/form-data'</form>
                     {{csrf_field()}}
-                    <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
-                            <label for="avatar" class="col-md-4 control-label">Editar avatar</label>
-
-                            <div class="col-md-6">
-                                <input id="avatar" type="file" class="form-control" name="avatar" value="" accept="image/*">
-                            </div>
                         <h2>Cambiar datos personales</h2>
+                        <img src="uploads/avatars/{{auth()->user()->avatar}}" alt="" width="100px">
+                        <br>
                         <label for="username">Nombre de Usuario</label>
                         <br>
                         <input id="username" type="text" name="usuario" value="" placeholder="">
@@ -36,8 +31,12 @@
                         <label for="password">Nueva Contraseña</label>
                         <br>
                         <input id="password" type="password" name="claveNueva" value="">
-                            <button type='submit' value="submit" name="submit">Editar</button>
-                        </div>
+                        <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
+                          <label for="avatar">Editar avatar</label>
+                            <input class="text-center d-inline" id="avatar" type="file" class="form-control" name="avatar" value="" accept="image/*">
+                          </div>
+                            <button class="d-block" type='submit' value="submit" name="submit">Editar</button>
+
                         </form>
                 </div>
             </div>

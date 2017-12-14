@@ -15,7 +15,7 @@
 
 			<!-- Header -->
 				<div id="header-wrapper" class="wrapper">
-				<video src="{{asset ('images/intro.mp4')}}" loop autoplay width="100%"></video>
+				<video src="{{asset ('images/intro.mp4')}}" poster="{{asset ('images/backgroundss.jpg')}}" loop autoplay width="100%"></video>
 
 				<div id="header">
 						<!-- Logo -->
@@ -137,7 +137,7 @@
 							   <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/financial-times-logo.jpg')}}"   alt="" ></a>
-									
+
 									<ul class="actions">
 										<li><a href="/news" class="button style1">Leer más</a></li>
 									</ul>
@@ -148,7 +148,7 @@
 							   <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/New_York_Times_logo.jpg')}}"   alt="" /></a>
-									
+
 									<ul class="actions">
 										<li><a href="/news" class="button style1">Leer más</a></li>
 									</ul>
@@ -159,7 +159,7 @@
 							  <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/wall-s.png')}}" alt= ></a>
-									
+
 									<ul class="actions">
 										<li><a href="/news" class="button style1">Leer más</a></li>
 									</ul>
@@ -170,7 +170,7 @@
 							<button type="button" class="prev">&lt;</button>
                             <button type="button" class="next">&gt;</button>
 						  </div>
-					   </div> 
+					   </div>
 					</div>
 				</div>
 
@@ -277,7 +277,7 @@
 
 		</div>
 
-		
+
 
 		<!-- Scripts -->
 
@@ -288,7 +288,7 @@
 			<script src="{{asset ('js/util.js')}}"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="{{asset ('js/main.js')}}"></script>
-			
+
 			<script type="text/javascript">
     var carrousel = document.querySelector('.carrousel')
 var carrito = document.querySelector('.carrousel-images')
@@ -320,6 +320,6 @@ carrito.addEventListener('transitionend', function () {
     })
 
 </script>
-           
+
 	</body>
 </html>
