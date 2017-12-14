@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::post('/home', 'UserController@updateAvatar');
+Route::put('/home', 'UserController@update');
 /* hernan */
 Route::get('/test', function(){
 

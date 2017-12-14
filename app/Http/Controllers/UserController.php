@@ -68,9 +68,37 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $this->validate($request,[
+            'name'=>'required|string',
+            'email'=>'email|unique:users',
+          ]);
+
+          $confirmar = $request->input('password');
+
+        if (password_verify($confirmar,auth()->user()->password) && $request->hasfile('avatar')){
+            $avatar = $request->file('avatar');
+            $filename = Auth::user()->name . time() . "." . $avatar->getClientOriginalExtension();
+            Image::make($avatar)->fit(300,300)
+            ->save(public_path("/uploads/avatars/" . $filename ));
+
+            $user = Auth::user();
+            $user->avatar = $filename;
+            $user->save();
+        }
+
+  
+
+  
+          if(password_verify($confirmar,auth()->user()->password)){
+            $user->name = $request->input('name');
+            $user->email = $request->input('email');
+            $user->save();
+            return view('home', array('user' => Auth::user()));
+          } else {
+            return view('home', array('user' => Auth::user()));
+          }
     }
 
     /**
