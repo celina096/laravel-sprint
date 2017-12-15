@@ -29,12 +29,10 @@
                         <br>
                         <input id="oldpassword" type="password" name="password" value="" required>
                         <br>
-                        <label for="password">Nueva Contraseña</label>
-                        <br>
-                        <input id="password" type="password" name="newPass" value="">
                         <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
                           <label for="avatar">Editar avatar</label>
-                            <input class="text-center d-inline" id="avatar" type="file" class="form-control" name="avatar" value="" accept="image/*">
+                          <br>
+                            <input class="d-inline w-25" id="avatar" type="file" class="form-control" name="avatar" value="" accept="image/*" style="display:inline;">
                           </div>
                             <button class="d-block" type='submit' value="submit" name="submit">Editar</button>
 
