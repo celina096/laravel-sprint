@@ -48,7 +48,7 @@
                   </li>
                   <li class="">
                     {{-- <img src="/plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
-                    <a id="buttonID" href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i>Cambiar color</a>
+                    <a id="buttonID"><i class="fa fa-toggle-on" aria-hidden="true"></i>Cambiar color</a>
                   </li>
                 </div>
               </ul>
