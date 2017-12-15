@@ -162,8 +162,8 @@
 						     </div>
 							</div>
 						  </div>
-							<button type="button" class="prev " >&#8249;</button>
-                            <button type="button" class="next ">&#8250;</button>
+							<button type="button" class="prev " >&laquo;</button>
+                            <button type="button" class="next "> &raquo;</button>
 						  </div>
 					   </div>
 					</div>

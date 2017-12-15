@@ -49,11 +49,15 @@ object-fit: cover;
   position: absolute;
   top: 40%;
   width:30px;
+  
   margin-top: -22px;
   padding: 16px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  background-color: Transparent;
+  background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(start-color), to(end-color));
+  background-image: -webkit-linear-gradient(top, start-color, end-color);
+  background-image: -moz-linear-gradient(top, start-color, end-color);
+  background-image: linear-gradient(to bottom, start-color, end-color);;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
@@ -69,10 +73,13 @@ object-fit: cover;
   width: 30px;
   margin-top: -22px;
   padding: 16px;
- 
+  
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  background-color: Transparent;
+  background-color: background-image: -webkit-gradient(linear, left top, left bottom, from(start-color), to(end-color));
+  background-image: -webkit-linear-gradient(top, start-color, end-color);
+  background-image: -moz-linear-gradient(top, start-color, end-color);
+  background-image: linear-gradient(to bottom, start-color, end-color);;
   background-repeat:no-repeat;
   border: none;
   cursor:pointer;
@@ -82,9 +89,11 @@ object-fit: cover;
 
 .carrousel button.next:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   
 }
 .carrousel button.prev:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
 }
 
 
