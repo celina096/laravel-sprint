@@ -10,11 +10,11 @@
 }
 
 body {
-    color: white !important;
+    color: grey !important;
 }
 
 .panel-body {
-    
+
     background-color: rgb(46, 46, 46) !important;
 }
 

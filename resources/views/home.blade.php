@@ -21,14 +21,29 @@
                         <br>
                         <input id="username" type="text" name="name" value="" placeholder="{{auth()->user()->name}}">
                         <br>
+                        @if ($errors->has('name'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('name') }}</strong>
+                            </span>
+                        @endif
                         <label for="email">E-mail</label>
                         <br>
                         <input type="email" name="email" value="" placeholder="{{auth()->user()->email}}">
+                        @if ($errors->has('email'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('email') }}</strong>
+                            </span>
+                        @endif
                         <br>
                         <label for="oldpassword">Contraseña Actual</label>
                         <br>
                         <input id="oldpassword" type="password" name="password" value="" required>
                         <br>
+                        @if ($errors->has('password'))
+                            <span class="help-block">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                        @endif
                         <div class="form-group{{ $errors->has('avatar') ? ' has-error' : '' }}">
                           <label for="avatar">Editar avatar</label>
                           <br>

@@ -105,9 +105,6 @@
             var error = 0;
 
             button.addEventListener('click',function() {
-            console.log(name.value);
-            console.log('tititi');
-            document.querySelector('#errorEmail').innerText= "El email no es valido.";
                 error = 0;
 
             if (name1.value == "") {
@@ -129,7 +126,7 @@
             } else {
                 document.querySelector('#errorEmail').innerText= "";
             }
-            
+
 
             if (password.value == "") {
                 error++
