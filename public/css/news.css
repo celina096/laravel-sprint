@@ -2,7 +2,16 @@ body {
   font-family: 'Oswald', sans-serif;
   font-weight: light;
   margin: 0;
+  background-image:url('../images/1.jpg') !important;
+  background-repeat: none !important;
+  background-size: cover  !important;
+  
 }
+
+span {
+  font-family: Oswald; 
+}
+
 
 .header {
   background-color: gainsboro;
@@ -20,6 +29,7 @@ h1.title {
   color: #303030;
   font-size: 52px;
   text-transform: uppercase;
+  font-family: Oswald;
   
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
