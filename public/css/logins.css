@@ -9,6 +9,7 @@ body {
     background-size: cover;
     font-family: Roboto;
     font-size: 1.5em;
+    color: black;
 }
 
 .panel {
@@ -25,4 +26,17 @@ body {
     margin-top: 20px;
     background-color: rgba(6, 17, 25, 0.1) !important;
     border-radius: 25px;
+}
+
+#logo {
+    display: inline;
+}
+
+a.navbar-brand {
+    font-family: Oswald;
+    font-size: 1.5em;
+}
+
+.navbar-header {
+    background-color: 
 }
