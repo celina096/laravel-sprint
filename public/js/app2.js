@@ -8,10 +8,11 @@ $('select').on('change', function () {
         data: { source: source, _token: _token }, //posts the selected option to our ApiController file
         success: function (result) {
             // On success it gets `result`, which is a full html page that displays topnews from the news source selected.
-            $('#appendDivNews').html(result);    // Append the html result to the div that has an id  of  `appendDivNews`
+            $('#appendDivNews section.news').html(result);    // Append the html result to the div that has an id  of  `appendDivNews`
         },
 
-        error: function () {
+        error: function (e) {
+            console.log(e)
             alert("An error occoured, please try again!")
         }
     });

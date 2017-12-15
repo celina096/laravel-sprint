@@ -33,6 +33,9 @@ class ApiController extends Controller
       $data['news']         = $api->getNews($source); // Passed  source id to our api model, to fetch news by the selected source
       $data['news_sources'] = $this->allSources(); //retrieve all news sources
 
+      if($request->ajax()){
+                return view('newsfeed', $data);
+        }
       return view('news', $data);
     }
 
