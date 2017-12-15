@@ -11,6 +11,8 @@
         <link href="{{ asset('css/news.css') }}" rel="stylesheet">
         <!-- Styles -->
         <link href="{{ asset('css/app2.css') }}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald" rel="stylesheet">
+
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 

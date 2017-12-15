@@ -8,6 +8,14 @@ body {
     
 }
 
+h1.title {
+    font-family:Oswald;
+}
+
+span {
+  font-family: Oswald; 
+}
+ 
 .container {
     background-color: rgba(225, 234, 243, 0.42) !important;
     width: 100% !important;
