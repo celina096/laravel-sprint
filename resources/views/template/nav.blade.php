@@ -39,7 +39,7 @@
                     {{-- <img src="/plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
                     <a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
-                                 document.getElementById('logout-form').submit();">
+                                 document.getElementById('logout-form').submit();"><i class="fa fa-sign-out" aria-hidden="true"></i>
                         Logout
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -48,7 +48,7 @@
                   </li>
                   <li class="">
                     {{-- <img src="/plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
-                    <a id="buttonID" href="#">Cambiar color</a>
+                    <a id="buttonID" href="#"><i class="fa fa-toggle-on" aria-hidden="true"></i>Cambiar color</a>
                   </li>
                 </div>
               </ul>
@@ -178,7 +178,7 @@
     </aside>
   @endguest
 <script>
-    document.getElementById('buttonID').onclick = function () { 
+    document.getElementById('buttonID').onclick = function () {
     document.getElementById('theme_css').href = '/css/dark-theme.css';
 };
 </script>

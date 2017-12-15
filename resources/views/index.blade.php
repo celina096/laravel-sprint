@@ -50,7 +50,7 @@
 									<li><a href="/preguntas"> FAQs </a></li>
 									@guest
 									<li><a href="/login">Login</a></li>
-									<li><a href="/register">Register</a></li>
+									<li><a href="/register">Registro</a></li>
 									@else
 									<li><a href="/login">Entrar</a></li>
 									@endguest
@@ -142,8 +142,8 @@
 							   <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/financial-times-logo.jpg')}}"   alt="" ></a>
-									
-									
+
+
 								</section>
 								</div>
 							</div>
@@ -151,8 +151,8 @@
 							   <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/bbc-world-news.png')}}"   alt="" /></a>
-								
-									
+
+
 								</section>
 								</div>
 							</div>
@@ -160,9 +160,9 @@
 							  <div class="vista">
 								<section class="highlight">
 									<a href="#" class="image-link"><img src="{{asset ('images/cnn-logo.png')}}" alt= ></a>
-									
-								
-								
+
+
+
 								</section>
 						     </div>
 							</div>
@@ -172,11 +172,11 @@
 						  </div>
 					   </div>
 					</div>
-					
+
 					<ul class="actions actions-centered">
 							<li><a href="/news" class="button style1 big">Leer más</a></li>
 							</ul>
-			
+
 				</div>
 			<!-- Footer -->
 				<div id="footer-wrapper" class="wrapper">

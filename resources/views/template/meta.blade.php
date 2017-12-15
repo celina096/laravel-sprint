@@ -16,7 +16,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/plugins/css/_all-skins.min.css">
-    <link rel="apple-touch-icon" href="/plugins/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="{{asset('/plugins/img/apple-touch-icon.png')}}">
     <link rel="shortcut icon" href="{{ asset ('images/favicon.ico')}}">
     <link rel="icon" href="{{ asset ('images/favicon.ico')}}" type="image/x-icon')}}" />
 
