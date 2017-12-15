@@ -36,3 +36,14 @@ button {
     color: grey !important;
 }
 
+.content-wrapper {
+    background-color: rgb(46, 46, 46) !important;
+}
+.wrapper {
+    background-color: rgb(46, 46, 46) !important;
+}
+
+.main-footer {
+    color: white !important;
+    background-color: black !important;
+}

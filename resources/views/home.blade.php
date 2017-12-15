@@ -14,7 +14,7 @@
                     <form class="text-center" action="" method="post" enctype='multipart/form-data'</form>
                     {{csrf_field()}}
                     {{method_field('PUT')}}
-                        <h2>Cambiar datos personales</h2>
+                        <h2 class="logo-mini">Cambiar datos personales</h2>
                         <img src="uploads/avatars/{{auth()->user()->avatar}}" alt="" width="100px">
                         <br>
                         <label for="username">Nombre de Usuario</label>

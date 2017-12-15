@@ -11,4 +11,23 @@ body {
     font-family: Oswald;
 
 }
+ul.dropdown-menu {
+    width: 60px !important;
+    
+}
 
+ul.dropdown-menu li {
+    padding: 7px;
+}
+
+
+.navbar {
+    background-color: rgb(9, 9, 28) !important;
+}
+.logo-lg {
+    background-color: rgb(9, 9, 28) !important;
+}
+
+.logo {
+    background-color: rgb(9, 9, 28) !important;
+}
