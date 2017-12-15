@@ -213,7 +213,7 @@
 											<div class="row">
 												<div class="12u">
 													<ul class="actions">
-														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="submit" class="style1" value="Enviar" /></li>
 														<li><input type="reset" class="style2" value="Reset" /></li>
 													</ul>
 												</div>
