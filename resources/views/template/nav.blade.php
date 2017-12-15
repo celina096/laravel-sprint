@@ -6,9 +6,9 @@
       <!-- Logo -->
       <a href="{{ route('home') }}" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
-        <span class="logo-mini"><b>IT</b>Ventas</span>
+        <span class="logo-mini"><img id="logo" src="{{asset ('images/logonuevo.png')}}" alt="" width="30px"></span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>FINANZAS</b></span>
+        <span class="logo-lg"><img id="logo" src="{{asset ('images/logonuevo.png')}}" alt="" width="30px"><b>Mis Finanzas</b></span>
       </a>
 
       <!-- Header Navbar: style can be found in header.less -->
@@ -30,7 +30,7 @@
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                 <img src="/uploads/avatars/{{auth()->user()->avatar}}" class="user-image" alt="User Image">
-                <span class="hidden-xs">Usuario: {{ auth()->user()->name}}</span>
+                <span class="hidden-xs">{{ auth()->user()->name}}</span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
@@ -40,7 +40,7 @@
                     <a href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                  document.getElementById('logout-form').submit();">
-                        CERRAR SESION
+                        Logout
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}

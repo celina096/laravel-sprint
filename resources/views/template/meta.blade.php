@@ -24,6 +24,8 @@
     <link href="/plugins/datatables/responsive.dataTables.min.css" rel="stylesheet"/>
 
     <link rel="stylesheet" type="text/css" href="/plugins/css/bootstrap-select.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset ('css/template.css')}}">
   </head>
   <?php // NOTE: hold-transition skin-blue-light sidebar-mini ?>

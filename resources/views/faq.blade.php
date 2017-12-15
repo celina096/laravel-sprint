@@ -9,7 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>News Application with Laravel</title>
+        <title>Noticias</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?famisly=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
         <link href="{{ asset('css/news.css') }}" rel="stylesheet">
@@ -21,7 +21,7 @@
     </head>
     <link href="css/animate.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Oswald" rel="stylesheet">
-    <title> Mis Finanzas Argentina </title>
+    <title> Mis Finanzas</title>
   </head>
   <body>
 <section class="header">

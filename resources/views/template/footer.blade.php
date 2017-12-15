@@ -2,7 +2,7 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> 2.3.0
     </div>
-    <strong>Copyright &copy; 2013-2017 <a href="www.tucontadorpublico.com.ar">FINANZAS</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2017 <a href="/home">MIS FINANZAS</a>.</strong> All rights reserved.
 </footer>
 <!-- jQuery -->
 <script src="/plugins/js/jquery-3.1.1.min.js"></script>

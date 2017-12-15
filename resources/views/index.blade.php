@@ -47,8 +47,12 @@
 										</ul>
 									</li>
 									<li><a href="/preguntas"> FAQs </a></li>
+									@guest
 									<li><a href="/login">Login</a></li>
 									<li><a href="/register">Register</a></li>
+									@else
+									<li><a href="/login">Entrar</a></li>
+									@endguest
 								</ul>
 							</nav>
 
