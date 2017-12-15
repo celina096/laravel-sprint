@@ -145,7 +145,7 @@
 							<div class="4u 12u(mobile) vista-container ">
 							   <div class="vista">
 								<section class="highlight">
-									<a href="#" class="image-link"><img src="{{asset ('images/New_York_Times_logo.jpg')}}"   alt="" /></a>
+									<a href="#" class="image-link"><img src="{{asset ('images/bbc-world-news.png')}}"   alt="" /></a>
 								
 									
 								</section>
@@ -154,17 +154,16 @@
 							<div class="4u 12u(mobile) vista-container ">
 							  <div class="vista">
 								<section class="highlight">
-									<a href="#" class="image-link"><img src="{{asset ('images/wall-s.png')}}" alt= ></a>
+									<a href="#" class="image-link"><img src="{{asset ('images/cnn-logo.png')}}" alt= ></a>
 									
 								
 								
 								</section>
-									
-								</div>
+						     </div>
 							</div>
 						  </div>
-							<button type="button" class="prev">&lt;</button>
-                            <button type="button" class="next">&gt;</button>
+							<button type="button" class="prev " >&#8249;</button>
+                            <button type="button" class="next ">&#8250;</button>
 						  </div>
 					   </div>
 					</div>
@@ -174,7 +173,6 @@
 							</ul>
 			
 				</div>
-
 			<!-- Footer -->
 				<div id="footer-wrapper" class="wrapper">
 					<div class="title"> ¿Quieres contactarte con nosotros? </div>
@@ -298,7 +296,7 @@ var imagenActual = 0
 
 var cantidadImagenes = document.querySelectorAll('.carrousel .vista').length
 
-document.querySelector('button.prev').addEventListener('click', function () {
+document.querySelector('.prev').addEventListener('click', function () {
   if (imagenActual > 0) {
         imagenActual--
     } else {
@@ -307,7 +305,7 @@ document.querySelector('button.prev').addEventListener('click', function () {
     carrito.style.transform = 'translateX(' + (-carrousel.offsetWidth * imagenActual) + 'px)';
 })
 
-document.querySelector('button.next').addEventListener('click', function () {
+document.querySelector('.next').addEventListener('click', function () {
   if (imagenActual < (cantidadImagenes - 1)) {
         imagenActual++
     } else {
