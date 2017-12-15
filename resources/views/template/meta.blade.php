@@ -7,6 +7,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="" id="theme_css">
     <link rel="stylesheet" href="/plugins/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/plugins/css/font-awesome.css">
@@ -16,7 +17,8 @@
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="/plugins/css/_all-skins.min.css">
     <link rel="apple-touch-icon" href="/plugins/img/apple-touch-icon.png">
-    <link rel="shortcut icon" href="/plugins/img/favicon.ico">
+    <link rel="shortcut icon" href="{{ asset ('images/favicon.ico')}}">
+    <link rel="icon" href="{{ asset ('images/favicon.ico')}}" type="image/x-icon')}}" />
 
     <!-- DATATABLES -->
     <link rel="stylesheet" type="text/css" href="/plugins/datatables/jquery.dataTables.min.css">

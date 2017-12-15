@@ -10,7 +10,7 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h1 class="text-center">Este es el perfil de {{auth()->user()->name }}</h1>
+
                     <form class="text-center" action="" method="post" enctype='multipart/form-data'</form>
                     {{csrf_field()}}
                     {{method_field('PUT')}}

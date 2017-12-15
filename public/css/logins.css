@@ -35,6 +35,7 @@ body {
 a.navbar-brand {
     font-family: Oswald;
     font-size: 1.5em;
+    padding-top: 6px;
 }
 
 .navbar-header {

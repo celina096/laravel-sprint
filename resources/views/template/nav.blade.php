@@ -46,6 +46,10 @@
                         {{ csrf_field() }}
                     </form>
                   </li>
+                  <li class="">
+                    {{-- <img src="/plugins/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"> --}}
+                    <a id="buttonID" href="#">Cambiar color</a>
+                  </li>
                 </div>
               </ul>
             </li>
@@ -66,6 +70,7 @@
               <i class="fa fa-tasks"></i> <span>Escritorio</span>
             </a>
           </li>
+          @if (auth()->user()->rol == 'administrador')
           <li class="treeview">
             <a href="#">
               <i class="fa fa-laptop"></i>
@@ -78,6 +83,7 @@
               <li><a href="{{route ('clientes.index')}}"><i class="fa fa-circle-o"></i> Clientes</a></li>
             </ul>
           </li>
+          @endif
 
           <li class="treeview">
             <a href="#">
@@ -171,3 +177,8 @@
       <!-- /.sidebar -->
     </aside>
   @endguest
+<script>
+    document.getElementById('buttonID').onclick = function () { 
+    document.getElementById('theme_css').href = '/css/dark-theme.css';
+};
+</script>

@@ -31,7 +31,7 @@
 
           <div class="panel-body">
               <div class="col-lg-12">
-                <form method="post" action =" {{route('ingresos.asignar', $value->id)}}">
+                <form method="post" action ="{{route('ingresos.asignar', $value->id)}}">
                   <input type="hidden" name="_method" value="" />
                   {{ csrf_field() }}
                   {{ method_field('POST') }}

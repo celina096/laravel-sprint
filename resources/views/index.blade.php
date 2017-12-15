@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{asset('css/main.css')}}" />
+		<link rel="icon" href="{{ asset ('images/favicon.ico')}}" type="image/x-icon')}}" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<link rel="stylesheet" href="{{asset('css/carrousel.css')}}" />
 	</head>
@@ -20,7 +21,7 @@
 				<div id="header">
 						<!-- Logo -->
 							<div id="logo">
-								<h1><a href="index.html">Mis Finanzas</a></h1>
+								<h1><a>Mis Finanzas</a></h1>
 
 							</div>
 
@@ -198,7 +199,7 @@
 										{{ csrf_field() }}
 											<div class="row 50%">
 												<div class="6u 12u(mobile)">
-													<input type="text" name="name" id="contact-name" placeholder="Name" />
+													<input type="text" name="name" id="contact-name" placeholder="Nombre" />
 												</div>
 												<div class="6u 12u(mobile)">
 													<input type="text" name="email" id="contact-email" placeholder="Email" />
@@ -206,7 +207,7 @@
 											</div>
 											<div class="row 50%">
 												<div class="12u">
-													<textarea name="mensaje" id="contact-message" placeholder="Message" rows="4"></textarea>
+													<textarea name="mensaje" id="contact-message" placeholder="Mensaje" rows="4"></textarea>
 												</div>
 											</div>
 											<div class="row">
@@ -228,10 +229,10 @@
 										<div class="row">
 											<div class="6u 12u(mobile)">
 												<section>
-													<h3 class="icon fa-home">Mailing Address</h3>
+													<h3 class="icon fa-home">Dirección</h3>
 													<p>
 														Mis Finanzas Accounting Group <br />
-														 Lima 111 <br />
+														 Lima 1111 <br />
 														 Buenos Aires, Argentina
 													</p>
 												</section>

@@ -43,7 +43,6 @@
                             <label for="rol" class="col-md-4 control-label">Rol</label>
                             <div class="col-md-6">
                               <select id="rol" class="form-control" name="rol"   >
-                                <option value=""></option>
                                 <option value="administrador">ADMINISTRADOR</option>
                                 <option value="liquidador">LIQUIDADOR</option>
                                 <option value="asistente">ASISTENTE</option>
@@ -87,6 +86,7 @@
                             </div>
                         </div>
                         <p class="form-message"></p>
+                        <a class="btn btn-link" href="/login">¿Ya estás registrado?</a>
                     </form>
                 </div>
             </div>

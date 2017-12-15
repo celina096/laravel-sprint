@@ -1,0 +1,38 @@
+.navbar {
+    background-color: black !important;
+}
+.logo-lg {
+    background-color: black !important;
+}
+
+.logo {
+    background-color: black !important;
+}
+
+body {
+    color: white !important;
+}
+
+.panel-body {
+    
+    background-color: rgb(46, 46, 46) !important;
+}
+
+.panel-heading {
+    color: white !important;
+    background-color: rgb(7, 7, 7) !important;
+}
+
+button {
+    color: black !important;
+}
+
+.main-sidebar {
+    color: white !important;
+    background-color: rgb(0, 0, 0) !important;
+}
+
+.sidebar-menu * {
+    color: grey !important;
+}
+
